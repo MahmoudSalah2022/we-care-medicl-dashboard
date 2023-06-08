@@ -1,0 +1,125 @@
+@import url(../css/color.css);
+@import url(../css/sa.css);
+
+header{
+    width: 397px;
+    padding: 15px !important;
+    position: absolute;
+    gap: 36.8px;
+
+
+}
+header::before{
+    content: "";
+    width: 1px;
+    height: 98%;
+    position: absolute;
+    left: 398px;
+    background-image: var(--linear-gradient1);
+}
+
+.mainlogo img{
+    width: 80%;
+    height: 100%;
+}
+
+.imageProfile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center center;
+    background-image: url("../assetse/mahmoud-ahmed-salah.jpg");
+    background-size: 100px 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.gradiantProfile{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-position: center center;
+    background-image: var(--linear-gradient1);
+    background-size: 104px 104px;
+    position: relative;
+    top: -102px;
+    left: -2px;
+    z-index: 0;
+}
+
+.profileSection{
+    color: var(--color1);
+}
+
+.userName{
+    font-size: 20px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.userName .firstName{
+    font-weight: 700 !important;
+}
+
+.idNumber{
+    font-size: 20px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.settingAndLog  a{
+    color: var(--color1)
+}
+
+.saperator{
+    content: "";
+    width: 2px;
+    height: 25px;
+    background-color: var(--color1);
+}
+
+.branchLink{
+    font-family: 'Cairo';
+    font-style: normal;
+    color: var(--color2);
+    font-size: 32px;
+    line-height: 20px;
+    margin-top: -110px !important;
+}
+
+.navlink{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.linktext{
+    font-family: 'Cairo';
+    font-style: normal;
+    color:var(--color1);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    border-bottom: 4px solid var(--color2);
+}
+
+.linkicon {
+    display: flex;
+    align-items: flex-end;
+}
+
+.linkicon .faicon {
+    font-size: 30px ;
+    color: var(--color2);
+}
+
+.copyright p{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 90px !important;
+}

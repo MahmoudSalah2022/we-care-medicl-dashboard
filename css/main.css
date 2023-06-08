@@ -1,0 +1,215 @@
+main{
+    margin-left: 486px !important;
+    padding-top: 39px !important;
+}
+
+.topWedgit {
+    gap: 60px;
+}
+
+.topWedgit .dashboardWedgit{
+    width: 406px;
+    background: var(--background3);
+    border: 1px solid var(--color2);
+    box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
+    border-radius: 16px;
+    padding: 47px 0px !important;
+    gap: 10px;
+}
+
+.topWedgit .dashboardWedgit p {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color5);
+    text-transform: capitalize;
+}
+
+.topWedgit .dashboardWedgit strong {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 29px;
+    color: var(--color1);
+}
+
+.topWedgit .headWedgit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    height: 73px;
+    background: var(--background2);
+    border: 1px solid #BFB411;
+    border-radius: 16px 0px;
+    margin-left: -28px !important;
+}
+
+.topWedgit .headWedgit p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    color: var(--color1);
+}
+
+
+.topWedgit .wedgitButton{
+    width: 130px;
+    height: 38px;
+    background: var(--background2);
+    border: 1px solid #BFB411;
+    border-radius: 16px 0px;
+    position: relative;
+    top: 98px;
+    left: 23px;
+    padding: 0 19px !important;
+}
+
+.topWedgit .wedgitButton p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color1);
+    line-height: 38px;
+}
+
+.middalWedgit{
+    margin-top: 60px !important;
+    gap: 60px;
+}
+
+.middalWedgit .dashboardWedgit{
+    width: 415px;
+    height: 265px;
+    background: var(--background3);
+    border: 1px solid var(--color2);
+    box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
+    border-radius: 16px;
+    padding: 21px 0 0 0!important;
+    gap: 10px;
+}
+
+.middalWedgit .dashboardWedgit p {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 29px;
+    color: var(--color5);
+    text-transform: capitalize;
+}
+
+.middalWedgit .dashboardWedgit strong {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color1);
+}
+
+.middalWedgit .headAndTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.middalWedgit .headWedgit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    height: 73px;
+    background: var(--background2);
+    border: 1px solid #BFB411;
+    border-radius: 16px 0px;
+    margin-top: -39px !important;
+    margin-left: -28px !important;
+}
+
+.middalWedgit .headWedgit img{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    color: var(--color1);
+}
+.carousel-item {
+    margin-left: 25px !important;
+}
+.carousel-indicators{
+    margin-bottom: -26px !important;
+    gap: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+    background-color: var(--background2) !important;
+}
+
+
+.middalWedgit .wedgitContent {
+    width: 403px;
+    height: 100px;
+}
+
+.middalWedgit .wedgitContent .imageProfileAndGradiant {
+    width: 104px;
+    height: 104px;
+}
+
+.wedgitContent .doctorName p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color:var(--color1);
+}
+
+.wedgitContent .doctorTime p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color5);
+}
+
+.middalWedgit .wedgitContent .profileSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+
+}
+
+.middalWedgit .wedgitButton{
+    width: 130px;
+    height: 38px;
+    background: var(--background2);
+    border: 1px solid #BFB411;
+    border-radius: 16px 0px;
+    position: relative;
+    top: 38px;
+    left: 296px;
+    padding: 0 19px !important;
+}
+
+.middalWedgit .wedgitButton p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color1);
+    line-height: 38px;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>We Care Dashboard</title>
+</head>
+
+<body>
+    <header class="d-flex flex-column">
+        <!-- logo -->
+        <div class="mainlogo">
+            <img src="../assetse/we care logo.svg" alt="" srcset="">
+        </div>
+        <!-- profile section -->
+        <div class="profileSection d-flex flex-row gap-3">
+            <!-- imageprofile -->
+            <div class="imageProfileAndGradiant">
+                <div class="imageProfile">
+                </div>
+                <div class="gradiantProfile">
+                </div>
+            </div>
+
+            <div class="userData">
+                <!-- username -->
+                <div class="userName d-flex flex-row gap-1">
+                    <div class="firstName">Mahmoud</div>
+                    <div class="lastname">Ahmed Salah</div>
+                </div>
+                <!-- idnumber -->
+                <div class="idNumber d-flex flex-row gap-1">
+                    <p>ID - </p>
+                    <p>63846868</p>
+                </div>
+                <div class="settingAndLog d-flex flex-row gap-2">
+                    <!-- setting -->
+                    <div class="accountSetting">
+                        <a href="#">
+                            <p>Account Setting</p>
+                        </a>
+                    </div>
+                    <div class="saperator"></div>
+                    <!-- logout -->
+                    <div class="logout">
+                        <a href="#">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- branch link -->
+        <div class="branchLink d-flex flex-column">
+            <p style="font-size: 16px; font-weight: 600;">/</p>
+            <div class="currentScreen d-flex flex-row gap-1">
+                <p style="font-weight: 700;">Main Dashboard</p>
+                <p style="font-weight: 600;">Screen</p>
+            </div>
+        </div>
+        <!-- nav bar -->
+        <div class="navbar">
+            <ul class="nav d-flex flex-column gap-5">
+                <li class="navlink ">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="linktext">Accountant</div>
+                    </a>
+                </li>
+                <li class="navlink d-flex flex-row gap-2">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-boxes"></i>
+                        </div>
+                        <div class="linktext">Inventory</div>
+                    </a>
+                </li>
+                <li class="navlink d-flex flex-row gap-2">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-users"></i>
+                        </div>
+                        <div class="linktext">HR</div>
+                    </a>
+                </li>
+                <li class="navlink d-flex flex-row gap-2">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-stethoscope"></i>
+                        </div>
+                        <div class="linktext">Hospital</div>
+                    </a>
+                </li>
+                <li class="navlink d-flex flex-row gap-2">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-paste"></i>
+                        </div>
+                        <div class="linktext">Reports</div>
+                    </a>
+                </li>
+                <li class="navlink d-flex flex-row gap-2">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-cogs"></i>
+                        </div>
+                        <div class="linktext">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- copyRIght -->
+        <div class="copyright">
+            <p> All Rights Reserved &copy;
+                <script>document.write(new Date().getFullYear())</script> WE CARE MEDICAL COMPLEX
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="topWedgit d-flex flex-row ">
+            <div class="dashboardWedgit d-flex flex-row">
+                <div class="headWedgit">
+                    <p>15</p>
+                </div>
+                <div class="wedgitTitle">
+                    <p><strong>Doctors</strong><br>today available</p>
+                </div>
+                <div class="wedgitButton">
+                    <a href="#">
+                    <p>more details</p>
+                    </a>
+                </div>
+            </div>
+            <div class="dashboardWedgit d-flex flex-row">
+                <div class="headWedgit">
+                    <p>35</p>
+                </div>
+                <div class="wedgitTitle">
+                    <p><strong>Nurses</strong><br>today available</p>
+                </div>
+                <div class="wedgitButton">
+                    <a href="#">
+                    <p>more details</p>
+                    </a>
+                </div>
+            </div>
+            <div class="dashboardWedgit d-flex flex-row">
+                <div class="headWedgit">
+                    <p>10</p>
+                </div>
+                <div class="wedgitTitle">
+                    <p><strong>Rooms</strong><br>today available</p>
+                </div>
+                <div class="wedgitButton">
+                    <a href="#">
+                    <p>more details</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="middalWedgit d-flex flex-row ">
+            <div class="dashboardWedgit d-flex flex-column">
+                <div class="headAndTitle">
+                    <div class="headWedgit">
+                        <img src="../assetse/we care icon.svg" alt="" srcset="">
+                    </div>
+                    <div class="wedgitTitle">
+                        <p><strong>available</strong><br>Doctors</p>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner d-flex flex-row align-items-center">
+                      <div class="carousel-item active">
+                        <div class="wedgitContent">
+                            <div class="profileSection gap-3">
+                                <!-- imageprofile -->
+                                <div class="imageProfileAndGradiant">
+                                    <div class="imageProfile">
+                                    </div>
+                                    <div class="gradiantProfile">
+                                    </div>
+                                </div>
+                                <div class="userData">
+                                    <!-- username -->
+                                    <div class="doctorName d-flex flex-row gap-1">
+                                        <p><strong>DR.</strong>Mahmoud Ahmed Salah</p>
+                                    </div>
+                                    <!-- idnumber -->
+                                    <div class="doctorTime d-flex flex-row gap-1">
+                                        <p>ID - </p>
+                                        <p>63846868</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="wedgitContent">
+                            <div class="profileSection gap-3">
+                                <!-- imageprofile -->
+                                <div class="imageProfileAndGradiant">
+                                    <div class="imageProfile">
+                                    </div>
+                                    <div class="gradiantProfile">
+                                    </div>
+                                </div>
+                                <div class="userData">
+                                    <!-- username -->
+                                    <div class="doctorName d-flex flex-row gap-1">
+                                        <p><strong>DR.</strong>Mahmoud Ahmed Salah</p>
+                                    </div>
+                                    <!-- idnumber -->
+                                    <div class="doctorTime d-flex flex-row gap-1">
+                                        <p>ID - </p>
+                                        <p>63846868</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="wedgitContent">
+                            <div class="profileSection gap-3">
+                                <!-- imageprofile -->
+                                <div class="imageProfileAndGradiant">
+                                    <div class="imageProfile">
+                                    </div>
+                                    <div class="gradiantProfile">
+                                    </div>
+                                </div>
+                                <div class="userData">
+                                    <!-- username -->
+                                    <div class="doctorName d-flex flex-row gap-1">
+                                        <p><strong>DR.</strong>Mahmoud Ahmed Salah</p>
+                                    </div>
+                                    <!-- idnumber -->
+                                    <div class="doctorTime d-flex flex-row gap-1">
+                                        <p>ID - </p>
+                                        <p>63846868</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="wedgitButton">
+                    <a href="#">
+                    <p>more details</p>
+                    </a>
+                </div>
+            </div>
+            <div class="dashboardWedgit d-flex flex-column">
+                <div class="headAndTitle">
+                    <div class="headWedgit">
+                        <img src="../assetse/we care icon.svg" alt="" srcset="">
+                    </div>
+                    <div class="wedgitTitle">
+                        <p><strong>available</strong><br>Doctors</p>
+                    </div>
+                </div>
+                <div class="wedgitContent"></div>
+                <div class="wedgitButton">
+                    <a href="#">
+                    <p>more details</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+    <!-- bootstrap & font-awesome js -->
+    <script src="../js/bootstrap.bundle.min.js"> </script>
+    <script src="../js/all.min.js"> </script>
+</body>
+
+</html>
