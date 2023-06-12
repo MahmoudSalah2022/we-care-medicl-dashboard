@@ -2,25 +2,28 @@
 @import url(../css/sa.css);
 
 header{
+    display: flex !important;
+    flex-direction: column;
     width: 397px;
+    height: 100%;
     padding: 15px !important;
-    position: absolute;
+    position: fixed;
     gap: 36.8px;
-
-
+    justify-content: space-between;
+    background-color: var(--background3);
 }
 header::before{
     content: "";
     width: 1px;
-    height: 98%;
-    position: absolute;
+    height: inherit;
+    position: fixed;
     left: 398px;
     background-image: var(--linear-gradient1);
 }
 
 .mainlogo img{
-    width: 80%;
-    height: 100%;
+    width: 270px;
+    margin-bottom: 111px !important;
 }
 
 .imageProfile{
@@ -47,8 +50,11 @@ header::before{
     z-index: 0;
 }
 
-.profileSection{
+header .profileSection{
+    margin-top: -82px !important;
+    height: 110px;
     color: var(--color1);
+    margin-bottom: 20px !important;
 }
 
 .userName{
@@ -88,7 +94,14 @@ header::before{
     color: var(--color2);
     font-size: 32px;
     line-height: 20px;
-    margin-top: -110px !important;
+    margin-bottom: 20px !important;
+}
+
+.navbar ul.nav {
+    padding-top: 10px !important;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: 320px;
 }
 
 .navlink{
@@ -121,5 +134,86 @@ header::before{
 .copyright p{
     text-align: left;
     font-size: 12px;
-    margin-top: 90px !important;
+    /* margin-top: 90px !important; */
+}
+
+@media screen and (max-width: 1024px) {
+
+    .branchLink {
+        margin-top: -64px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: none !important;
+        width: 300px;
+        height: 100%;
+        /* justify-content:flex-start; */
+        z-index: 999;
+    }
+    header::before {
+        left: 300px;
+    }
+    .mainlogo img {
+        margin-bottom: 49px !important;
+    }
+    header .profileSection {
+        margin-top: -20px !important;
+        gap:10px !important;
+    }
+
+    .profileSection .userData {
+        /* margin-top: -110px !important; */
+        margin-bottom: 85px !important;
+    }
+
+    .userName , .idNumber {
+        font-size: 14px;
+    }
+
+    .settingAndLog {
+        flex-direction: column !important;
+    }
+
+    .saperator{
+        width: 15px;
+        height: 2px;
+    }
+    .branchLink {
+        font-family: 'Cairo';
+        font-style: normal;
+        color: var(--color2);
+        font-size: 24px;
+        line-height: 20px;
+        margin-top: 0px !important;
+    }
+    .currentScreen{
+        flex-direction: column !important;
+    }
+
+    .navbar ul.nav {
+        height: 273px;
+    }
+
+    .copyright p {
+        /* margin-bottom: 10% !important; */
+    }
+
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 375px) {
+ 
+}
+
+@media screen and (max-width: 320px) {
+
+
 }

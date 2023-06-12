@@ -1,6 +1,9 @@
 main{
     margin-left: 486px !important;
     padding-top: 39px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topWedgit {
@@ -167,6 +170,11 @@ main{
     height: 104px;
 }
 
+.wedgitContent .profileSection .userData {
+     margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
 .wedgitContent .doctorName p{
     font-family: 'Cairo';
     font-style: normal;
@@ -212,4 +220,82 @@ main{
     font-size: 16px;
     color: var(--color1);
     line-height: 38px;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-left: 0px !important;
+        padding-top: 39px !important;
+    }
+
+
+    .topWedgit .dashboardWedgit {
+        width: 378px;
+    }
+
+    .topWedgit .headWedgit {
+        margin-left: 0px !important;
+        margin-top: -47px !important;
+    }
+
+    .topWedgit .wedgitButton {
+        top: 101px;
+        left: 0px;
+        padding: 0 8px !important;
+    }
+
+    .middalWedgit .dashboardWedgit {
+        width: 378px;
+        height: 300px;
+    }
+    
+    .middalWedgit .headWedgit {
+        margin-top: -21px !important;
+        margin-left: -1px !important;
+    }
+
+    .middalWedgit .wedgitContent {
+        margin-left: -14px !important;
+    }
+
+    .wedgitContent .doctorName p {
+        font-size: 18px;
+    }
+
+    .middalWedgit .wedgitButton {
+        top: 56px;
+        left: 247px;
+        padding: 0 20px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .topWedgit .wedgitButton {
+        width: 147px;
+    }
+
+    .middalWedgit .wedgitButton {
+        left: 242px;
+    }
+ 
+}
+
+@media screen and (max-width: 320px) {
+    .wedgitContent .doctorName p {
+        font-size: 18px;
+    }
+    .middalWedgit .wedgitButton {
+        left: 188px;
+    }
+
+
 }

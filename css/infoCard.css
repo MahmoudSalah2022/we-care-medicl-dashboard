@@ -1,0 +1,148 @@
+.infoCard{
+    width: 264px;
+    height: 329px;
+    background: var(--background3);
+    box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
+    border-radius: 16px;
+}
+
+.topcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardNumber{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 17px !important;
+    background: var(--background1);
+    border-radius: 16px 0px;
+}
+
+.cardNumber p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color:var(--background3);
+}
+
+.cardNumber .codeNumber{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color:var(--background3);
+}
+
+.cardName .cardNameTitle{
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    color:var(--background1);
+
+}
+
+.cardName .cardNametext{
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 12px;
+    color:var(--background1);
+
+}
+
+.dateCards, .bodyCard, .statusOfApproves{
+    margin-left: 14px !important;
+    text-transform: capitalize;
+}
+
+.dateCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 11px !important;
+}
+
+.dateCard{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 8px !important;
+}
+
+.dateCard .dateText{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    color:var(--background1);
+}
+
+.dateCard .date{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color:var(--background1);
+}
+
+.dateCardDivider{
+    content: "";
+    width: 135px;
+    height: 3px;
+    background-color: var(--background2);
+    border-radius: 50px;
+}
+
+.bodyCard .detail{
+    padding-bottom: 11px !important;
+}
+
+.bodyCard .detail .detailHead{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    color:var(--background1);
+    text-transform: capitalize;
+}
+
+.bodyCard .detail .detailText{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    color:var(--background1);
+    text-transform: capitalize;
+}
+
+.statusOfApproves{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 133px;
+    height: 36px;
+    padding: 7px 24px;
+    margin-top: 25px !important;
+    color: var(--background4);
+    background-color: var(--background1);
+    border-radius: 50px;
+    cursor: pointer;
+}

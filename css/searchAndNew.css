@@ -1,0 +1,221 @@
+.searchAndNew{
+    width: 855px;
+    margin-left: 21px !important;
+    margin-right: 21px !important;
+}
+
+.topSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: inherit;
+}
+
+.printAndExport{
+    display: flex;
+    flex-direction: row;
+}
+
+.create,.print,.exportToExcel{
+    display: block;
+    width: fit-content;
+}
+.create a p{
+    width: fit-content;
+    padding: 6px 12px !important;
+    color: var(--color6);
+    background-color: var(--background1);
+    font-size: 24px;
+    border: 1px solid #7C7505;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.print a{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 6px 12px !important;
+    color: var(--color1);
+    font-size: 24px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.exportToExcel a p{
+    width: fit-content;
+    padding: 6px 12px !important;
+    color: var(--color6);
+    background-color: var(--background1);
+    font-size: 24px;
+    border: 1px solid #7C7505;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.bottomSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: #F2F2F2;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+
+    padding: 8px 16px !important;
+}
+
+.inputSearch{
+    width: 50%;
+    border: unset;
+    border-radius: unset;
+    margin-top: unset;
+    padding: unset;
+}
+
+.searchFaild{
+    width: 100%;
+    border: unset;
+    background-color: unset;
+}
+
+.dataSearch{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startDateSearch p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color:var(--color1);
+}
+
+.startDateSearch .startDate p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color:var(--color1);
+}
+
+.endDateSearch p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color:var(--color1);
+}
+
+.endDateSearch .endDate p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color:var(--color1);
+}
+
+.statusOfApproveButton .btn{
+
+    color:var(--color1);
+    background-color: unset;
+    border: unset;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .searchAndNew {
+        width: 776px;
+    }
+    .topSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:end;
+    }
+    .printAndExport{
+        flex-direction: column;
+    }
+    .create a p{
+        font-size: 16px;
+    }
+    
+    .print a{
+        font-size: 16px;
+    }
+    
+    .exportToExcel a p{
+        font-size: 16px;
+    }
+ 
+
+}
+
+@media screen and (max-width: 425px) {    
+    .bottomSection{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 8px;
+        background: unset;
+        box-shadow: unset;
+        border-radius: unset;
+        margin-top: unset !important;
+        padding: unset !important;
+    }
+
+    .inputSearch{
+        width: 100%;
+        border: 1px solid var(--color6);
+        border-radius: 8px;
+        margin-top: 8px !important;
+        padding: 6px !important;
+    }
+    .dataSearch {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
