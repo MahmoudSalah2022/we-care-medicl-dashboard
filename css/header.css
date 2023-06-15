@@ -8,6 +8,7 @@ header{
     gap: 36.8px;
     justify-content: space-between;
     background-color: var(--background3);
+    z-index: 999;
 }
 header::before{
     content: "";
@@ -94,11 +95,17 @@ header .profileSection{
     margin-bottom: 20px !important;
 }
 
+.headerbody .navbar{
+    height: 44vh;
+}
+
 .navbar ul.nav {
     padding-top: 10px !important;
     width: 100%;
     flex-wrap: nowrap;
-    height: 320px;
+    height: inherit;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .navlink{
@@ -136,16 +143,10 @@ header .profileSection{
     color: var(--color2);
 }
 
-.copyright p{
-    text-align: left;
-    font-size: 12px;
-    /* margin-top: 90px !important; */
-}
-
 .submenu{
     width: 310px;
     max-height: 653px;
-    height: fit-content;
+    /* height: calc(100% - 20px); */
     background-color: var(--background3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 36px;
@@ -157,9 +158,10 @@ header .profileSection{
     z-index: 999;
 }
 .submenu ul{
-    height: 450px;
+    height: 291px;
     overflow: scroll;
     overflow-x: hidden !important;
+    z-index: 999;
 }
 .submenu ul li{
     display: flex;
@@ -177,6 +179,14 @@ header .profileSection{
     font-weight: 700;
     color: var(--background1) !important;
 }
+
+.copyright p{
+    text-align: left;
+    font-size: 12px;
+    /* margin-top: 90px !important; */
+}
+
+
 
 @media screen and (max-width: 1024px) {
 
@@ -234,8 +244,12 @@ header .profileSection{
         flex-direction: column !important;
     }
 
+    .headerbody .navbar {
+    height: 31vh;
+}
+
     .navbar ul.nav {
-        height: 273px;
+        height: 172px;
     }
 
     .copyright p {
