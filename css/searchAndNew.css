@@ -2,9 +2,13 @@
     width: 855px;
     margin-left: 21px !important;
     margin-right: 21px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topSection{
+    width: 95% !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,6 +19,7 @@
 .printAndExport{
     display: flex;
     flex-direction: row;
+    gap: 16px;
 }
 
 .create,.print,.exportToExcel{
@@ -32,6 +37,11 @@
     text-transform: capitalize;
 }
 
+.create a p:hover{
+    color: var(--color1);
+    background-color: var(--background2);
+}
+
 .print a{
     display: flex !important;
     flex-direction: row;
@@ -45,6 +55,11 @@
     text-transform: capitalize;
 }
 
+.print a:hover{
+    color: var(--color4);
+    background-color: var(--background1);
+}
+
 .exportToExcel a p{
     width: fit-content;
     padding: 6px 12px !important;
@@ -56,7 +71,13 @@
     text-transform: capitalize;
 }
 
+.exportToExcel a p:hover{
+    color: var(--color1);
+    background-color: var(--background2);
+}
+
 .bottomSection{
+    width: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,7 +88,6 @@
     border-radius: 50px;
     margin-top: 16px !important;
     margin-bottom: 16px !important;
-
     padding: 8px 16px !important;
 }
 
@@ -81,6 +101,7 @@
 
 .searchFaild{
     width: 100%;
+    height: 45px !important;
     border: unset;
     background-color: unset;
 }
@@ -92,6 +113,26 @@
     align-self: center;
     justify-content: space-between;
     align-items: center;
+}
+
+.startDateSearch{
+    cursor: pointer;
+    padding: 6px !important;
+}
+
+.startDateSearch:hover{
+    background-color: var(--background5);
+    border-radius: 8px !important;
+}
+
+.endDateSearch{
+    cursor: pointer;
+    padding: 6px !important;
+}
+
+.endDateSearch:hover{
+    background-color: var(--background5);
+    border-radius: 8px !important;
 }
 
 .startDateSearch p{
@@ -145,7 +186,12 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: capitalize;
+    padding: 6px !important;
+}
 
+.statusOfApproveButton .btn:hover{
+    color:var(--color4);
+    background-color: var(--background1);
 }
 
 @media screen and (max-width: 1024px) {

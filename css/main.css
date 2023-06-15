@@ -61,7 +61,7 @@ main{
 }
 
 
-.topWedgit .wedgitButton{
+.topWedgit .wedgitButton a p{
     width: 130px;
     height: 38px;
     background: var(--background2);
@@ -71,15 +71,19 @@ main{
     top: 98px;
     left: 23px;
     padding: 0 19px !important;
-}
-
-.topWedgit .wedgitButton p{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     color: var(--color1);
     line-height: 38px;
+    text-align: center;
+}
+
+
+.topWedgit .wedgitButton a p:hover{
+    background: var(--background1);
+    color: var(--color2);
 }
 
 .middalWedgit{
@@ -201,25 +205,27 @@ main{
 
 }
 
-.middalWedgit .wedgitButton{
-    width: 130px;
-    height: 38px;
+
+.middalWedgit .wedgitButton a p{
+    width: fit-content;
     background: var(--background2);
+    color: var(--color1);
     border: 1px solid #BFB411;
     border-radius: 16px 0px;
     position: relative;
     top: 38px;
     left: 296px;
-    padding: 0 19px !important;
-}
-
-.middalWedgit .wedgitButton p{
+    padding: 0 24px !important;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    color: var(--color1);
     line-height: 38px;
+}
+.wedgitButton a p:hover{
+    background: var(--background1);
+    color: var(--color2);
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -242,7 +248,7 @@ main{
         margin-top: -47px !important;
     }
 
-    .topWedgit .wedgitButton {
+    .topWedgit .wedgitButton a p {
         top: 101px;
         left: 0px;
         padding: 0 8px !important;
@@ -266,9 +272,9 @@ main{
         font-size: 18px;
     }
 
-    .middalWedgit .wedgitButton {
+    .middalWedgit .wedgitButton a p {
         top: 56px;
-        left: 247px;
+        left: 248px;
         padding: 0 20px !important;
     }
 }
@@ -283,8 +289,8 @@ main{
         width: 147px;
     }
 
-    .middalWedgit .wedgitButton {
-        left: 242px;
+    .middalWedgit .wedgitButton a p {
+        left: 244px;
     }
  
 }
@@ -293,8 +299,8 @@ main{
     .wedgitContent .doctorName p {
         font-size: 18px;
     }
-    .middalWedgit .wedgitButton {
-        left: 188px;
+    .middalWedgit .wedgitButton a p {
+        left: 189px;
     }
 
 
