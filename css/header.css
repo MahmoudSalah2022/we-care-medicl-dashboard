@@ -144,6 +144,7 @@ header .profileSection{
 }
 
 .submenu{
+    display: block;
     width: 310px;
     max-height: 653px;
     /* height: calc(100% - 20px); */

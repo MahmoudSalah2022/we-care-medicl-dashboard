@@ -5,10 +5,14 @@
     --color4:#FFFFFF;
     --color5: #648C75;
     --color6:#D9D389;
+    --color7: #720303;
     --background1: #245A40;
     --background2: #BEC011;
     --background3: #F5F5F5;
     --background4:#FFFFFF;
     --background5:#BFB4113D;
+    --background6: #648C75;
+    --background7: #720303;
+
     --linear-gradient1: linear-gradient(to top, #D9D38900, #D9D389, #D9D389, #D9D38900);
 }

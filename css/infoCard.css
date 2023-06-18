@@ -1,15 +1,16 @@
 .infoCard{
-    width: 264px;
-    height: 329px;
+    width: 310px;
+    height: fit-content;
     background: var(--background3);
     box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
     border-radius: 16px;
+    padding-bottom: 16px !important;
 }
 
 .topcard{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
 }
 
@@ -39,26 +40,29 @@
     color:var(--background3);
 }
 
+.cardName{
+    margin-top: 16px !important;
+}
+
 .cardName .cardNameTitle{
 
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 12px;
+    font-size: 20px;
+    line-height: 1px;
     color:var(--background1);
+    padding-bottom: 8px !important;
 
 }
 
 .cardName .cardNametext{
-
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 12px;
     color:var(--background1);
-
 }
 
 .dateCards, .bodyCard, .statusOfApproves{
@@ -131,18 +135,119 @@
     text-transform: capitalize;
 }
 
+
 .statusOfApproves{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 133px;
+    width: fit-content;
     height: 36px;
-    padding: 7px 24px;
+    padding: 7px 15px !important;
     margin-top: 25px !important;
     color: var(--background4);
     background-color: var(--background1);
     border-radius: 50px;
-    cursor: pointer;
+}
+
+.approved{
+    background-color: var(--background1);
+
+}
+
+.notApproved{
+    background-color: #720303;
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-left: 14px !important;
+    margin-top: 16px !important;
+}
+
+.action div a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 10px 15px !important;
+    color: var(--background4);
+}
+
+.viewAction, .editAction, .deleteAction {
+    border-radius: 50px;
+}
+
+.viewAction{
+    background-color: var(--background6) ;
+    border: 1px solid var(--background6);
+    border-radius: 50px;
+}
+
+.viewAction a:hover{
+    color: var(--color5);
+    background-color: var(--background3) ;
+    border-radius: 50px;
+}
+
+.editAction{
+    background-color: var(--background2) ;
+    border: 1px solid var(--background2);
+
+}
+
+.editAction a:hover{
+    color: var(--color2);
+    background-color: var(--background3) ;
+    border-radius: 50px;
+}
+
+.deleteAction a{
+    font-weight: 700;
+    color: var(--color7) !important;
+    border: 1px solid var(--color7);
+    border-radius: 50px;
+}
+
+.deleteAction a:hover{
+    font-weight: 500;
+    color: var(--color4) !important;
+    background-color: var(--background7) ;
+    border-radius: 50px;
+}
+
+.action div a p {
+    line-height: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+ 
+}
+
+@media screen and (max-width: 320px) {
+
+
+
 }

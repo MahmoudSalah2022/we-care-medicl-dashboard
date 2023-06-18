@@ -4,6 +4,9 @@
 @import url(../css/main.css);
 @import url(../css/searchAndNew.css);
 @import url(../css/infoCard.css);
+@import url(../css/mainScreen.css);
+@import url(../css/subSectionCard.css);
+@import url(../css/popupWindow.css);
 
 *{
     margin: 0 !important;
@@ -38,4 +41,34 @@ a{
 
 ul{
     list-style: none;
+}
+
+.hideSection{
+    animation: hideMenu 3s;
+    visibility:hidden;
+}
+.showSection{
+    animation: showMenu 1s;
+
+
+}
+
+@keyframes showMenu {
+    from {
+        top: 500px;
+    }
+
+    to {
+        top: 343px;
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        top: 343px;
+    }
+
+    to {
+        top: 500px;
+    }
 }
