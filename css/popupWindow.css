@@ -1,7 +1,7 @@
 .popupWindow{
     display: none;
     width: 50%;
-    position: fixed;
+    position: absolute;
     height: fit-content;
     top: 0;
     background: var(--background3);

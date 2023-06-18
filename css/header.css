@@ -100,12 +100,13 @@ header .profileSection{
 }
 
 .navbar ul.nav {
-    padding-top: 10px !important;
+    padding-top: 30px !important;
     width: 100%;
     flex-wrap: nowrap;
     height: inherit;
     overflow-y: scroll;
     overflow-x: hidden;
+    gap: 63px !important;
 }
 
 .navlink{
