@@ -111,11 +111,20 @@
     border-radius: 50px;
 }
 
-.bodyCard .detail{
+.bodyCard{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.cardProfileImage img {
+    width: 100px;
+    border-radius: 8px !important;
+}
+.bodyCard .cardDetails .detail{
     padding-bottom: 11px !important;
 }
 
-.bodyCard .detail .detailHead{
+.bodyCard .cardDetails .detail .detailHead{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
@@ -125,7 +134,7 @@
     text-transform: capitalize;
 }
 
-.bodyCard .detail .detailText{
+.bodyCard .cardDetails .detail .detailText{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 300;
@@ -136,12 +145,20 @@
 }
 
 
-.statusOfApproves{
+.Approves{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 16px !important;
+    gap: 8px;
+}
+
+.Approves .status{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 8px;
+    justify-content: center;    
     width: fit-content;
     height: 36px;
     padding: 7px 15px !important;
@@ -150,14 +167,36 @@
     background-color: var(--background1);
     border-radius: 50px;
 }
-
-.approved{
-    background-color: var(--background1);
-
+.Approves .dateAndTimeOfApproves{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;    
+    width: fit-content;
 }
 
 .notApproved{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 16px !important;
+    gap: 8px;
+}
+
+.notApproved .status{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;  
+    align-items: center;  
+    width: fit-content;
+    height: 36px;
+    padding: 7px 15px !important;
+    margin-top: 25px !important;
+    color: var(--background4);
     background-color: #720303;
+    border-radius: 50px;
 }
 
 .action{
@@ -182,7 +221,7 @@
     color: var(--background4);
 }
 
-.viewAction, .editAction, .deleteAction {
+.viewAction, .editAction, .deleteAction .otherAction{
     border-radius: 50px;
 }
 
@@ -221,6 +260,18 @@
     font-weight: 500;
     color: var(--color4) !important;
     background-color: var(--background7) ;
+    border-radius: 50px;
+}
+
+.otherAction a{
+    color: var(--color1) !important;
+    border: 1px solid var(--color1);
+    border-radius: 50px;
+}
+
+.otherAction a:hover{
+    color: var(--color4) !important;
+    background-color: var(--background1) ;
     border-radius: 50px;
 }
 

@@ -5,7 +5,7 @@
 @import url(../css/searchAndNew.css);
 @import url(../css/infoCard.css);
 @import url(../css/mainScreen.css);
-@import url(../css/subSectionCard.css);
+@import url(../css/subMainScreen.css);
 @import url(../css/popupWindow.css);
 
 *{
@@ -70,5 +70,25 @@ ul{
 
     to {
         top: 500px;
+    }
+}
+
+@keyframes showHeader {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes hideHeader {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -300px;
     }
 }

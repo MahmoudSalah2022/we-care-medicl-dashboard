@@ -22,6 +22,19 @@ function showAndHide(param){
     }
 }
 
+const header = document.querySelector('header');
+const menutoggle = document.querySelector('.menutoggle');
+
+menutoggle.addEventListener('click', ()=> {
+    // header.classList.toggle('showheader');
+    if(header.classList.contains('showheader')){
+        header.classList.remove('showheader')
+        header.classList.add('hideheader')
+    }else{
+        header.classList.add('showheader')
+        header.classList.remove('hideheader')
+    }
+})
 
 const createButton = document.querySelector('.create a p')
 const popupWindow = document.querySelector('.popupWindow')
