@@ -242,6 +242,7 @@ header .profileSection{
         position: absolute;
         top: 0;
         left: 294px;
+        cursor: pointer;
     }
     .profileSection .userData {
         /* margin-top: -110px !important; */
@@ -281,7 +282,7 @@ header .profileSection{
     }
 
     .navbar ul.nav {
-        height: 172px;
+        height: 248px;
     }
 
     .copyright p {

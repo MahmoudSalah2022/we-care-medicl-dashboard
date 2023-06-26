@@ -37,11 +37,19 @@ menutoggle.addEventListener('click', ()=> {
 })
 
 const createButton = document.querySelector('.create a p')
-const popupWindow = document.querySelector('.popupWindow')
-const closeButton = document.querySelector('.closeAction')
+const addNewPopupWindow = document.querySelector('#addNew')
+let closeButtons = document.querySelectorAll('.closeAction')
 createButton.addEventListener('click', () => {
-    popupWindow.classList.add('showElement')
+    addNewPopupWindow.classList.add('showElement')
 });
-closeButton.addEventListener('click', () => {
-    popupWindow.classList.remove('showElement')
+
+closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener('click', () => {
+        const popupWindows = document.querySelectorAll('.popupWindow')
+        popupWindows.forEach((popupWindow) => {
+            popupWindow.classList.remove('showElement')
+        });
+    });
 });
+
+

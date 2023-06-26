@@ -93,12 +93,12 @@ main{
 
 .middalWedgit .dashboardWedgit{
     width: 415px;
-    height: 265px;
+    height: fit-content;
+    justify-content: space-evenly;
     background: var(--background3);
     border: 1px solid var(--color2);
     box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
     border-radius: 16px;
-    padding: 21px 0 0 0!important;
     gap: 10px;
 }
 
@@ -166,7 +166,7 @@ main{
 
 .middalWedgit .wedgitContent {
     width: 403px;
-    height: 100px;
+    height: inherit;
 }
 
 .middalWedgit .wedgitContent .imageProfileAndGradiant {
@@ -178,7 +178,6 @@ main{
      margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
-
 .wedgitContent .doctorName p{
     font-family: 'Cairo';
     font-style: normal;
@@ -187,7 +186,6 @@ main{
     line-height: 20px;
     color:var(--color1);
 }
-
 .wedgitContent .doctorTime p{
     font-family: 'Cairo';
     font-style: normal;
@@ -196,7 +194,6 @@ main{
     line-height: 20px;
     color:var(--color5);
 }
-
 .middalWedgit .wedgitContent .profileSection {
     display: flex;
     flex-direction: row;
@@ -204,8 +201,6 @@ main{
     height: 100px;
 
 }
-
-
 .middalWedgit .wedgitButton a p{
     width: fit-content;
     background: var(--background2);
@@ -213,7 +208,7 @@ main{
     border: 1px solid #BFB411;
     border-radius: 16px 0px;
     position: relative;
-    top: 38px;
+    top: 25px;
     left: 296px;
     padding: 0 24px !important;
     font-family: 'Cairo';
@@ -227,6 +222,67 @@ main{
     color: var(--color2);
     
 }
+.allWedgitContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 161px;
+    padding: 10px 95px !important;
+    justify-content: space-between;
+}
+.wedgitDetail{
+    display: flex;
+    flex-direction: column;
+}
+.wedgitDetail  .wedgitDetailNumber p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+    color: var(--color1);
+}
+.wedgitDetail .wedgitDetailText p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--color5);
+
+}
+.table {
+    border: none !important;
+    position: relative;
+    left: 5px;
+}
+.table tr {
+    border-bottom: none !important;
+}
+.table th {
+    text-align: left !important;
+    color: var(--color2) !important;
+    background-color: var(--background3) !important;
+    border: none !important;
+}
+.table td {
+    border: var(--table-border);
+    padding: 5px;
+    vertical-align: baseline;
+    min-width: 100px;
+    word-break:keep-all;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--background3);
+    color: var(--color5);
+    border: none !important;
+}
+.table-striped>tbody>tr:nth-of-type(even)>* {
+    --bs-table-accent-bg: var(--background8);
+    color: var(--color1);
+    font-weight: 700;
+    border: none !important;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -238,7 +294,6 @@ main{
         margin-left: 0px !important;
         padding-top: 39px !important;
     }
-
 
     .topWedgit .dashboardWedgit {
         width: 378px;
@@ -257,7 +312,7 @@ main{
 
     .middalWedgit .dashboardWedgit {
         width: 378px;
-        height: 300px;
+        height: fit-content;
     }
     
     .middalWedgit .headWedgit {
@@ -274,9 +329,20 @@ main{
     }
 
     .middalWedgit .wedgitButton a p {
-        top: 56px;
+        top: 1px;
         left: 248px;
         padding: 0 20px !important;
+    }
+    .allWedgitContent{
+        padding: 10px 72px !important;
+    }
+    .table {
+        height: 178px;
+        width: 306px;
+        border: none !important;
+        position: relative;
+        left: 21px;
+        overflow-y: scroll;
     }
 }
 

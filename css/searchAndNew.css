@@ -175,7 +175,7 @@
     color:var(--color1);
 }
 
-.statusOfApproveButton .btn{
+.FilterOfStatusButton .btn{
 
     color:var(--color1);
     background-color: unset;
@@ -189,9 +189,24 @@
     padding: 6px !important;
 }
 
-.statusOfApproveButton .btn:hover{
+.FilterOfStatusButton .btn:hover{
     color:var(--color4);
     background-color: var(--background1);
+}
+
+.dropdown-menu.show {
+    display: flex;
+    padding: 8px !important;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown-menu li{
+    padding: 4px !important;
+}
+
+.dropdown-menu li:hover{
+background-color: var(--background3);
 }
 
 @media screen and (max-width: 1024px) {
