@@ -1,0 +1,822 @@
+<header>
+    <div class="menutoggle">
+        <i class="d-block d-lg-none fas fa-bars"></i>
+    </div>
+    <div class="headerbody">
+        <!-- logo -->
+        <div class="mainlogo">
+            <a href="/">
+                <img src="../../assetse/we care logo.svg" alt="" srcset="" href="/index.html">
+            </a>
+        </div>
+        <!-- profile section -->
+        <div class="profileSection d-flex flex-row gap-3">
+            <!-- imageprofile -->
+            <div class="imageProfileAndGradiant">
+                <div class="imageProfile">
+                </div>
+                <div class="gradiantProfile">
+                </div>
+            </div>
+
+            <div class="userData">
+                <!-- username -->
+                <div class="userName d-flex flex-row gap-1">
+                    <div class="firstName">Mahmoud</div>
+                    <div class="lastname">Ahmed Salah</div>
+                </div>
+                <!-- idnumber -->
+                <div class="idNumber d-flex flex-row gap-1">
+                    <p>ID - </p>
+                    <p>63846868</p>
+                </div>
+                <div class="settingAndLog d-flex flex-row gap-2">
+                    <!-- setting -->
+                    <div class="accountSetting">
+                        <a href="#">
+                            <p>Account Setting</p>
+                        </a>
+                    </div>
+                    <div class="saperator"></div>
+                    <!-- logout -->
+                    <div class="logout">
+                        <a href="#">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- branch link -->
+        <div class="branchLink d-flex flex-column">
+            <p id="currantCatogry" style="font-size: 16px; font-weight: 600;">/</p>
+            <div class="currentScreen d-flex flex-row gap-1">
+                <p id="currantPage" style="font-weight: 700;">Main Dashboard</p>
+                <!-- <p style="font-weight: 600;">Screen</p> -->
+            </div>
+        </div>
+        <!-- nav bar -->
+        <div class="navbar">
+            <ul class="nav d-flex flex-column gap-5">
+                <li id="Accountant" class="navlink" onclick="showAndHide('Accountant')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="linktext">Accountant</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li id="safe">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/safe.html">
+                                    <p> Safe </p>
+                                </a>
+                            </li>
+                            <li id="banks">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/Banks.html">
+                                    <p> Banks </p>
+                                </a>
+                            </li>
+                            <li id="voucherNames">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/VoucherNames.html">
+                                    <p> Voucher Names </p>
+                                </a>
+                            </li>
+                            <li id="currencies">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/currencies.html">
+                                    <p> Currencies </p>
+                                </a>
+                            </li>
+                            <li id="transferSafes">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/transferSafes.html">
+                                    <p> Transfer Safes </p>
+                                </a>
+                            </li>
+                            <li id="accountsGuide">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/accountsGuide.html">
+                                    <p> Accounts Guide </p>
+                                </a>
+                            </li>
+                            <li id="costCenters">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/costCenters.html">
+                                    <p> Cost Centers </p>
+                                </a>
+                            </li>
+                            <li id="generalLedger">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/generalLedger.html">
+                                    <p> General Ledger </p>
+                                </a>
+                            </li>
+                            <li id="assistantGeneralLedger">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/assistantGeneralLedger.html">
+                                    <p> Assistant General Ledger </p>
+                                </a>
+                            </li>
+                            <li id="journalEntry">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/journalEntry.html">
+                                    <p> Journal Entry </p>
+                                </a>
+                            </li>
+                            <li id="budgetClassifications">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/budgetClassifications.html">
+                                    <p> Budget Classifications </p>
+                                </a>
+                            </li>
+                            <li id="incomeLists">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/incomeLists.html">
+                                    <p> Income Lists </p>
+                                </a>
+                            </li>
+                            <li id="discountTypes">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/discountTypes.html">
+                                    <p> Discount Types </p>
+                                </a>
+                            </li>
+                            <li id="taxesTypes">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/taxesTypes.html">
+                                    <p> Taxes Types </p>
+                                </a>
+                            </li>
+                            <li id="receiptVouchers">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/receiptVouchers.html">
+                                    <p> Receipt Vouchers </p>
+                                </a>
+                            </li>
+                            <li id="expenseVouchers">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/">
+                                    <p> Expense Vouchers </p>
+                                </a>
+                            </li>
+                            <li id="safesAdjusting">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/safesAdjusting.html">
+                                    <p> Safes Adjusting </p>
+                                </a>
+                            </li>
+                            <li id="safesTransactions">
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Accountant/safesTransactions.html">
+                                    <p> Safes Transactions </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="Inventory" class="navlink d-flex flex-row gap-2" onclick="showAndHide('Inventory')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-boxes"></i>
+                        </div>
+                        <div class="linktext">Inventory</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/salesInvoices.html">
+                                    <p> Sales Invoicse For Customers  </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/salesCompaniesInvoices.html">
+                                    <p> Sales Invoicse For Companies </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/salesPatientsInvoices.html">
+                                    <p> Sales Invoicse For Patients </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/salesErInvoices.html">
+                                    <p> Sales Invoicse For ER </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/returnSalesInvoices.html">
+                                    <p> Return Sales Invoices </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/purchaseRequests.html">
+                                    <p> Purchase Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/purchaseOrders.html">
+                                    <p> Purchase Order </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/returnPurchaseOrders.html">
+                                    <p> Return Purchase Orders </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/storesItems.html">
+                                    <p> Stores Items </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/vendors.html">
+                                    <p> Vendors </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/transferItemsOrders.html">
+                                    <p> Transfer Items Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/transferItemsOrders.html">
+                                    <p> Transfer Items Orders </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/damageItems.html">
+                                    <p> Damage Items </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/stockTaking.html">
+                                    <p> Stocktaking </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/storesItemsCard.html">
+                                    <p> Stores Items Card </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/storesOpeningBalances.html">
+                                    <p> Stores Opening Balances </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/activeSubstances.html">
+                                    <p> Active Substances </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/storesUnits.html">
+                                    <p> Stores Units </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/itemsGroups.html">
+                                    <p> Items Groups </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/stores.html">
+                                    <p> Stores </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/reasonsDestroyingItems.html">
+                                    <p> Reasons Destroying Items </p>
+                                </a>
+                            </li>                                
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Inventroy/vendorsGroups.html">
+                                    <p> Vendors Groups </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="HR" class="navlink d-flex flex-row gap-2" onclick="showAndHide('HR')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-users"></i>
+                        </div>
+                        <div class="linktext">HR</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/attendance.html">
+                                    <p> Attendance </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/vacationsRequests.html">
+                                    <p> Vacations Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/delayRequests.html">
+                                    <p> Delay Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/workErrandRequests.html">
+                                    <p> Work Errand Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/overtimeRequests.html">
+                                    <p> Overtime Requests </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesBonuses.html">
+                                    <p> Employees Bonuses </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesPenalties.html">
+                                    <p> Employees Penalties </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesAdvances.html">
+                                    <p> Employees Advances </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/payslips.html">
+                                    <p> Payslips </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employees.html">
+                                    <p> Employees </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/createVacations.html">
+                                    <p> Create Vacations </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/departments.html">
+                                    <p> Departments </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/sections.html">
+                                    <p> Sections </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/jobs.html">
+                                    <p> Jobs </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/jobsShifts.html">
+                                    <p> Jobs Shifts </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/salaryAllowancesNames.html">
+                                    <p> Salary Allowances Names </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/salaryDeductionsNames.html">
+                                    <p> Salary Deductions Names </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesBonusNames.html">
+                                    <p> Employees Bonus Names </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesPenaltiesNames.html">
+                                    <p> Employees Penalties Names </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/jobsTools.html">
+                                    <p> Jobs Tools </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/vacationsNames.html">
+                                    <p> Vacations Names </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/jobsAdvertisements.html">
+                                    <p> Jobs Advertisements </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/jobsApplicants.html">
+                                    <p> Jobs Applicants </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hr/employeesContracts.html">
+                                    <p> Employees Contracts </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="Hospital" class="navlink d-flex flex-row gap-2" onclick="showAndHide('Hospital')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-stethoscope"></i>
+                        </div>
+                        <div class="linktext">Hospital</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/patients.html">
+                                    <p> Patients </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/doctors.html">
+                                    <p> Doctors </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/servicesOrders.html">
+                                    <p> Services Orders </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/doctorDeskTop.html">
+                                    <p> Doctor DeskTop </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/doctorAppointments.html">
+                                    <p> Doctor Appointments </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/patientHistory.html">
+                                    <p> Patient History </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/laboratoryDeskTop.html">
+                                    <p> Laboratory DeskTop </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/radiologyDeskTop.html">
+                                    <p> Radiology DeskTop </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/patientsApproval.html">
+                                    <p> Patients Approval </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/medicalOffers.html">
+                                    <p> Medical Offers </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/offersOrders.html">
+                                    <p> Offers Orders </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/services.html">
+                                    <p> Services </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/servicesCategories.html">
+                                    <p> Services Categories </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/servicesGroups.html">
+                                    <p> Services Groups </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/mainInsuranceCompanies.html">
+                                    <p> Main Insurance Companies </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/insuranceCompanies.html">
+                                    <p> Insurance Companies </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/insuranceClasses.html">
+                                    <p> Insurance Classes </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/insuranceContracts.html">
+                                    <p> Insurance Contracts </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/achiCodes.html">
+                                    <p> ACHI Codes </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/medicineDurations.html">
+                                    <p> Medicine Durations </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/medicineRoutes.html">
+                                    <p> Medicine Routes </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/medicineFrequencies.html">
+                                    <p> Medicine Frequencies </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/chiefComplaints.html">
+                                    <p> Chief Complaints </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/significantSigns.html">
+                                    <p> Significant Signs </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/diagnoses.html">
+                                    <p> Diagnoses </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/patientRecommendations.html">
+                                    <p> Patient Recommend </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/patientEducations.html">
+                                    <p> Patient Educations </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/otherConditions.html">
+                                    <p> Other Conditions </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/specialties.html">
+                                    <p> Specialties </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/hospitalResponsibilities.html">
+                                    <p> Hospital Responsibilities </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/drinks.html">
+                                    <p> Drinks </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/foods.html">
+                                    <p> Foods </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Hospital/packages.html">
+                                    <p> Packages </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="Reports" class="navlink d-flex flex-row gap-2" onclick="showAndHide('Reports')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-paste"></i>
+                        </div>
+                        <div class="linktext">Reports</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Reports/insuranceCompaniesClaims.html">
+                                    <p> Insurance Companies Claims </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Reports/reorderLimits.html">
+                                    <p> Report Reorder Limit </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Reports/mostSellingItems.html">
+                                    <p> Most Selling Items </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Reports/lowestSellingItems.html">
+                                    <p> Lowest Selling Items </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="Setting" class="navlink d-flex flex-row gap-2" onclick="showAndHide('Setting')">
+                    <a class="d-flex flex-row gap-2" href="#">
+                        <div class="linkicon">
+                            <i class="faicon fas fa-cogs"></i>
+                        </div>
+                        <div class="linktext">Setting</div>
+                    </a>
+                    <div class="submenu hideSection">
+                        <ul>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/customers.html">
+                                    <p> Customers </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/customersGroups.html">
+                                    <p> Customers Groups </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/nationalities.html">
+                                    <p> Nationalities </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/countries.html">
+                                    <p> Countries </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/goves.html">
+                                    <p> Governorates </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/cities.html">
+                                    <p> Cities </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/areas.html">
+                                    <p> Areas </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/printersPaths.html">
+                                    <p> Printers Paths </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/namesConversions.html">
+                                    <p> Names Conversions </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/numbering.html">
+                                    <p> Numbering Setting </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/security.html">
+                                    <p> Security </p>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../assetse/white small icon.svg">
+                                <a href="../../html/Setting/systemSetting.html">
+                                    <p> System Setting </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <!-- copyRIght -->
+        <div class="copyright">
+            <p> All Rights Reserved &copy;
+                <script>document.write(new Date().getFullYear())</script> WE CARE MEDICAL COMPLEX
+            </p>
+        </div>
+    </footer>
+</header>
