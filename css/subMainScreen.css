@@ -60,6 +60,7 @@
 
 .subSectionCard .bodyCard{
     margin-top: 11px !important;
+    flex-direction: column;
 }
 
 .subSectionCard .bodyCard .detail{
