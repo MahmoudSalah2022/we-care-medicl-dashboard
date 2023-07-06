@@ -29,17 +29,17 @@
 .create a p{
     width: fit-content;
     padding: 6px 12px !important;
-    color: var(--color6);
-    background-color: var(--background1);
-    font-size: 24px;
-    border: 1px solid #7C7505;
+    background-color: var(--button-backgroundColor-1);
+    color: var(--button-fontColor-1);
+   font-size: var(--font-size-lg);
+    border: 1px solid var(--button-border-color-1);
     border-radius: 10px;
     text-transform: capitalize;
 }
 
 .create a p:hover{
-    color: var(--color1);
-    background-color: var(--background2);
+    background-color: var(--hover-button-backgroundColor-1);
+    color: var(--hover-button-fontColor-1);
 }
 
 .print a{
@@ -49,31 +49,31 @@
     gap: 8px;
     width: fit-content;
     padding: 6px 12px !important;
-    color: var(--color1);
-    font-size: 24px;
+    color: var(--button-fontColor-2);
+   font-size: var(--font-size-lg);
     border-radius: 10px;
     text-transform: capitalize;
 }
 
 .print a:hover{
-    color: var(--color4);
-    background-color: var(--background1);
+    color: var(--hover-button-fontColor-2);
+    background-color: var(--hover-button-backgroundColor-2);
 }
 
 .exportToExcel a p{
     width: fit-content;
     padding: 6px 12px !important;
-    color: var(--color6);
-    background-color: var(--background1);
-    font-size: 24px;
-    border: 1px solid #7C7505;
+    background-color: var(--button-backgroundColor-1);
+    color: var(--button-fontColor-1);
+    font-size: var(--font-size-lg);
+    border: 1px solid var(--button-border-color-1);
     border-radius: 10px;
     text-transform: capitalize;
 }
 
 .exportToExcel a p:hover{
-    color: var(--color1);
-    background-color: var(--background2);
+    background-color: var(--hover-button-backgroundColor-1);
+    color: var(--hover-button-fontColor-1);
 }
 
 .bottomSection{
@@ -104,6 +104,7 @@
     height: 45px !important;
     border: unset;
     background-color: unset;
+    outline: none;
 }
 
 .dataSearch{
@@ -116,82 +117,80 @@
 }
 
 .startDateSearch{
+    color:var(--button-fontColor-2);
     cursor: pointer;
     padding: 6px !important;
 }
 
 .startDateSearch:hover{
-    background-color: var(--background5);
+    background-color: var(--hover-button-backgroundColor-2);
+    color:var(--hover-button-fontColor-2);
     border-radius: 8px !important;
 }
 
 .endDateSearch{
+    color:var(--button-fontColor-2);
     cursor: pointer;
     padding: 6px !important;
 }
 
 .endDateSearch:hover{
-    background-color: var(--background5);
+    background-color: var(--hover-button-backgroundColor-2);
+    color:var(--hover-button-fontColor-2);
     border-radius: 8px !important;
 }
 
 .startDateSearch p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-size-sm);
     line-height: 24px;
     text-transform: capitalize;
-    color:var(--color1);
 }
 
 .startDateSearch .startDate p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+   font-size: var(--font-size-sm);
     line-height: 24px;
     text-transform: capitalize;
-    color:var(--color1);
 }
 
 .endDateSearch p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+   font-size: var(--font-size-sm);
     line-height: 24px;
     text-transform: capitalize;
-    color:var(--color1);
 }
 
 .endDateSearch .endDate p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+   font-size: var(--font-size-sm);
     line-height: 24px;
     text-transform: capitalize;
-    color:var(--color1);
 }
 
 .FilterOfStatusButton .btn{
-
-    color:var(--color1);
+    color:var(--button-fontColor-2);
     background-color: unset;
     border: unset;
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-size-sm);
     line-height: 24px;
     text-transform: capitalize;
     padding: 6px !important;
 }
 
 .FilterOfStatusButton .btn:hover{
-    color:var(--color4);
-    background-color: var(--background1);
+    background-color: var(--hover-button-backgroundColor-2);
+    color:var(--hover-button-fontColor-2);
 }
 
 .dropdown-menu.show {
@@ -206,7 +205,7 @@
 }
 
 .dropdown-menu li:hover{
-background-color: var(--background3);
+background-color: var(--main-color3);
 }
 
 @media screen and (max-width: 1024px) {
@@ -227,15 +226,15 @@ background-color: var(--background3);
         flex-direction: column;
     }
     .create a p{
-        font-size: 16px;
+       font-size: var(--font-size-sm);
     }
     
     .print a{
-        font-size: 16px;
+       font-size: var(--font-size-sm);
     }
     
     .exportToExcel a p{
-        font-size: 16px;
+       font-size: var(--font-size-sm);
     }
  
 
@@ -257,7 +256,7 @@ background-color: var(--background3);
 
     .inputSearch{
         width: 100%;
-        border: 1px solid var(--color6);
+        border: 1px solid var(--main-color2);
         border-radius: 8px;
         margin-top: 8px !important;
         padding: 6px !important;

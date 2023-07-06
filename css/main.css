@@ -12,8 +12,8 @@ main{
 
 .topWedgit .dashboardWedgit{
     width: 406px;
-    background: var(--background3);
-    border: 1px solid var(--color2);
+    background: var(--background-color2);
+    border: 1px solid var(--border-color2);
     box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
     border-radius: 16px;
     padding: 47px 0px !important;
@@ -21,22 +21,20 @@ main{
 }
 
 .topWedgit .dashboardWedgit p {
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+   font-size: var(--font-size-lg);
     line-height: 29px;
-    color: var(--color5);
+    color: var(--sub-color-font2);
     text-transform: capitalize;
 }
 
 .topWedgit .dashboardWedgit strong {
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+   font-size: var(--font-size-xl);
     line-height: 29px;
-    color: var(--color1);
+    color: var(--main-color-font2);
 }
 
 .topWedgit .headWedgit{
@@ -45,46 +43,50 @@ main{
     align-items: center;
     width: 114px;
     height: 73px;
-    background: var(--background2);
-    border: 1px solid #BFB411;
+    background: var(--background-color1);
+    border: 1px solid var(--border-color1);
     border-radius: 16px 0px;
     margin-left: -28px !important;
 }
 
 .topWedgit .headWedgit p{
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+   font-size: var(--font-size-xxl);
     line-height: 38px;
-    color: var(--color1);
+    color: var(--main-color-font1);
 }
 
 
 .topWedgit .wedgitButton a p{
     width: 130px;
     height: 38px;
-    background: var(--background2);
-    border: 1px solid #BFB411;
+    background: var(--button-backgroundColor-3);
+    border: 1px solid var(--button-border-color-3);
     border-radius: 16px 0px;
     position: relative;
     top: 98px;
     left: 23px;
     padding: 0 19px !important;
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    color: var(--color1);
+   font-size: var(--font-size-sm);
+    color: var(--button-fontColor-3);
     line-height: 38px;
     text-align: center;
 }
 
 
 .topWedgit .wedgitButton a p:hover{
-    background: var(--background1);
-    color: var(--color2);
+    background: var(--hover-button-backgroundColor-3);
+    color: var(--hover-button-fontColor-3);
 }
+.availabelDoctor{
+    height: 287.93px !important;
+}
+.appointmentCalender, .appointmentToday, .appointmentDetails{
+    height: 390px !important;
+} 
 
 .middalWedgit{
     margin-top: 60px !important;
@@ -95,30 +97,30 @@ main{
     width: 415px;
     height: fit-content;
     justify-content: space-evenly;
-    background: var(--background3);
-    border: 1px solid var(--color2);
+    background: var(--background-color2);
+    border: 1px solid var(--border-color2);
     box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
     border-radius: 16px;
     gap: 10px;
 }
 
 .middalWedgit .dashboardWedgit p {
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+   font-size: var(--font-size-xl);
     line-height: 29px;
-    color: var(--color5);
+    color: var(--sub-color-font2);
     text-transform: capitalize;
 }
 
 .middalWedgit .dashboardWedgit strong {
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+   font-size: var(--font-size-lg);
     line-height: 29px;
-    color: var(--color1);
+    color: var(--main-color-font2);
 }
 
 .middalWedgit .headAndTitle {
@@ -133,7 +135,8 @@ main{
     align-items: center;
     width: 114px;
     height: 73px;
-    background: var(--background2);
+    background: var(--background-color1);
+    border: 1px solid var(--border-color1);
     border: 1px solid #BFB411;
     border-radius: 16px 0px;
     margin-top: -39px !important;
@@ -141,12 +144,17 @@ main{
 }
 
 .middalWedgit .headWedgit img{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+   font-size: var(--font-size-xxl);
     line-height: 38px;
     color: var(--color1);
+}
+
+div#availabelDoctorCurosel {
+    height: 155px;
+    display: flex;
 }
 .carousel-item {
     margin-left: 25px !important;
@@ -167,6 +175,9 @@ main{
 .middalWedgit .wedgitContent {
     width: 403px;
     height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .middalWedgit .wedgitContent .imageProfileAndGradiant {
@@ -179,18 +190,18 @@ main{
     margin-bottom: 0px !important;
 }
 .wedgitContent .doctorName p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--font-size-md);
     line-height: 20px;
-    color:var(--color1);
+    color:var(--main-color2);
 }
 .wedgitContent .doctorTime p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+   font-size: var(--font-size-sm);
     line-height: 20px;
     color:var(--color5);
 }
@@ -203,23 +214,22 @@ main{
 }
 .middalWedgit .wedgitButton a p{
     width: fit-content;
-    background: var(--background2);
-    color: var(--color1);
-    border: 1px solid #BFB411;
+    background: var(--button-backgroundColor-3);
+    border: 1px solid var(--button-border-color-3);;
     border-radius: 16px 0px;
     position: relative;
     top: 25px;
     left: 296px;
     padding: 0 24px !important;
-    font-family: 'Cairo';
+    color: var(--button-fontColor-3);
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+   font-size: var(--font-size-sm);
     line-height: 38px;
 }
 .wedgitButton a p:hover{
-    background: var(--background1);
-    color: var(--color2);
+    background: var(--hover-button-backgroundColor-3);
+    color: var(--hover-button-fontColor-3);
     
 }
 .allWedgitContent{
@@ -235,34 +245,46 @@ main{
     flex-direction: column;
 }
 .wedgitDetail  .wedgitDetailNumber p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     text-transform: capitalize;
-    color: var(--color1);
+    color: var(--main-color-font5);
 }
 .wedgitDetail .wedgitDetailText p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--font-size-md);
     text-transform: capitalize;
-    color: var(--color5);
+    color: var(--sub-color-font5);
 
 }
+
+.wedgitContent.calender {
+    display: flex;
+    margin-top: 25px !important;
+    flex-direction: column;
+}
+
+#appointmentCalenderButton, #todayappointmentButton, #appointmentDetailsButton {
+    margin-bottom: 17px !important;
+}
+
 .table {
     border: none !important;
     position: relative;
     left: 5px;
+    margin-top: 25px !important;
 }
 .table tr {
     border-bottom: none !important;
 }
 .table th {
     text-align: left !important;
-    color: var(--color2) !important;
-    background-color: var(--background3) !important;
+    color: var(--main-color-font2) !important;
+    background-color: var(--background-color2) !important;
     border: none !important;
 }
 .table td {
@@ -273,13 +295,13 @@ main{
     word-break:keep-all;
 }
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg: var(--background3);
-    color: var(--color5);
+    --bs-table-accent-bg: var(--table-row-odd-backgrount-color);
+    color: var(--table-row-odd-font-color);
     border: none !important;
 }
 .table-striped>tbody>tr:nth-of-type(even)>* {
-    --bs-table-accent-bg: var(--background8);
-    color: var(--color1);
+    --bs-table-accent-bg: var(--table-row-even-backgrount-color);
+    color: var(--table-row-even-font-color);
     font-weight: 700;
     border: none !important;
 }
@@ -325,7 +347,7 @@ main{
     }
 
     .wedgitContent .doctorName p {
-        font-size: 18px;
+       font-size: var(--font-size-md);
     }
 
     .middalWedgit .wedgitButton a p {
@@ -364,7 +386,7 @@ main{
 
 @media screen and (max-width: 320px) {
     .wedgitContent .doctorName p {
-        font-size: 18px;
+       font-size: var(--font-size-md);
     }
     .middalWedgit .wedgitButton a p {
         left: 189px;

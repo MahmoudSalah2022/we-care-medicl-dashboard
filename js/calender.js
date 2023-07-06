@@ -27,6 +27,7 @@ const renderCalendar = () => {
         let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
                      && currYear === new Date().getFullYear() ? " active" : "";
         liTag += `<li class="day${isToday}">${i}</li>`;
+
     }
 
     for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
@@ -40,6 +41,10 @@ const renderCalendar = () => {
         daysButton.addEventListener('click', () => {
             const AppointmentCalenderPopup = document.querySelector('.AppointmentCalenderPopup')
             AppointmentCalenderPopup.classList.add('showElement')
+            const body = document.querySelector('body')
+            body.classList.add('my-body-noscroll-class')
+            const popupOverlay = document.querySelector('.popupOverlay')
+            popupOverlay.classList.add('showOverlay')
         });
     });
 }

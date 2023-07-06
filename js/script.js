@@ -46,7 +46,7 @@ var pageSpaceName = PureName.replace(/([a-z])([A-Z])/g, '$1 $2')
 console.log( urlPage );
 console.log( pageName );
 console.log( PureName );
-console.log( categoryName );
+console.log( categoryName);
 if(urlPage === "/"){
     var categoryPage = document.querySelector(".branchLink #currantCatogry").innerText = '/';
     var currantPage = document.querySelector(".branchLink #currantPage").innerText = "Main Dashboard";
@@ -54,5 +54,6 @@ if(urlPage === "/"){
 var categoryPage = document.querySelector(".branchLink #currantCatogry").innerText = categoryName;
 var currantPage = document.querySelector(".branchLink #currantPage").innerText = pageSpaceName;
 }
+
 
 

@@ -1,10 +1,13 @@
 .subMainScreen{
     flex-direction: row;
 }
+.subSectionCard {
+    margin-right: 25px !important;
+}
 .subSectionCard .infoCard{
     width: 510px;
     height: fit-content;
-    background: var(--background3);
+    background: var(--main-color3);
     box-shadow: 0px 0px 24px rgba(36, 90, 64, 0.25);
     border-radius: 16px;
     padding-bottom: 16px !important;
@@ -21,26 +24,25 @@
     width: fit-content;
     height: fit-content;
     padding: 8px 17px !important;
-    background: var(--background1);
+    background: var(--background-color3);
+    color:var(--color-font3);
     border-radius: 16px 0px;
 }
 
 .subSectionCard .cardNumber p{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color:var(--background3);
 }
 
 .subSectionCard .cardNumber .codeNumber{
-    font-family: 'Cairo';
+   
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    color:var(--background3);
 }
 
 .subSectionCard .cardName{
@@ -48,13 +50,11 @@
 }
 
 .subSectionCard .cardName .cardNameTitle{
-
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--font-size-md);
     line-height: 12px;
-    color:var(--background1);
+    color:var(--main-color-font5);
 
 }
 
@@ -68,22 +68,20 @@
 }
 
 .subSectionCard .bodyCard .detail .detailHead{
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 12px;
-    color:var(--background1);
+    color:var(--main-color-font5);
     text-transform: capitalize;
 }
 
 .subSectionCard .bodyCard .detail .detailText{
-    font-family: 'Cairo';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+   font-size: var(--font-size-md);
     line-height: 18px;
-    color:var(--background1);
+    color:var(--color1);
     text-transform: capitalize;
 }
 
@@ -106,31 +104,33 @@
     gap: 8px;
     width: fit-content;
     padding: 10px 15px !important;
-    color: var(--background4);
 }
 
-.subSectionCard .printAction{
-    border-radius: 50px;
-}
-
-.subSectionCard .printAction{
-    background-color: var(--background6) ;
-    border: 1px solid var(--background6);
+.subSectionCard .printAction a{
+    background-color: var(--button-backgroundColor-5) ;
+    color: var(--button-fontColor-5) !important;
+    border: 1px solid var(--button-border-color-5);
     border-radius: 50px;
 }
 
 .subSectionCard .printAction a:hover{
-    color: var(--color5);
-    background-color: var(--background3) ;
+    background-color: var(--hover-button-backgroundColor-5) ;
+    color: var(--hover-button-fontColor-5) !important;
     border-radius: 50px;
 }
 
 
 @media screen and (max-width: 1024px) {
+    .subMainScreen{
+        margin-top: 25px !important;
+        margin-left: 25px !important;
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .subMainScreen{
+        margin-left: 25px !important;
         flex-direction: column;
     }
 }

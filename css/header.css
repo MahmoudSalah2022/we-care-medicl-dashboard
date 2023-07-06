@@ -7,7 +7,7 @@ header{
     position: fixed;
     gap: 36.8px;
     justify-content: space-between;
-    background-color: var(--background3);
+    background-color: var(--main-color3);
     z-index: 999;
 }
 header::before{
@@ -19,12 +19,38 @@ header::before{
     background-image: var(--linear-gradient1);
 }
 
-.mainlogo img{
-    width: 270px;
-    margin-bottom: 111px !important;
+.menutoggle {
+    height: 134px;
 }
 
-.imageProfile{
+.headerbody {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-top: -133px !important;
+    justify-content: space-between;
+}
+
+.mainlogo {
+    width: 270px;
+    height: 85px;
+    display: flex;
+    align-items: flex-start;
+}
+.mainlogo a{
+    display: flex;
+    width: 270px;
+}
+
+.headerbody .profileSection{
+    height: 100px;
+    margin-left: 2px !important;
+    color: var(--main-color2);
+    align-items: flex-start;
+
+}
+
+.profileSection .imageProfile{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -35,7 +61,7 @@ header::before{
     z-index: 1;
 }
 
-.gradiantProfile{
+.profileSection .gradiantProfile{
     width: 104px;
     height: 104px;
     border-radius: 50%;
@@ -48,113 +74,103 @@ header::before{
     z-index: 0;
 }
 
-header .profileSection{
-    margin-top: -82px !important;
-    height: 110px;
-    color: var(--color1);
-    margin-bottom: 20px !important;
-}
 
-.userName{
-    font-size: 20px;
-    font-family: 'Cairo';
+.profileSection .userName{
+    font-size: var(--font-size-md);
+   
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
 }
 
-.userName .firstName{
+.profileSection .userName .firstName{
     font-weight: 700 !important;
 }
 
-.idNumber{
-    font-size: 20px;
-    font-family: 'Cairo';
+.profileSection .idNumber{
+    font-size: var(--font-size-md);
+   
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
 }
 
-.settingAndLog  a{
-    color: var(--color1)
+.profileSection .settingAndLog  a{
+    color: var(--main-color2);
 }
 
-.saperator{
+.profileSection .saperator{
     content: "";
     width: 2px;
     height: 25px;
-    background-color: var(--color1);
+    background-color: var(--main-color2);
 }
 
-.branchLink{
-    font-family: 'Cairo';
+.headerbody .branchLink{
     font-style: normal;
-    color: var(--color2);
-    font-size: 32px;
+    color: var(--main-color1);
+    font-size: var(--font-size-xl);
     line-height: 20px;
-    margin-bottom: 20px !important;
+    align-items: flex-start;
 }
-
-.headerbody {
-    margin-top: -133px !important;
-}
-
 
 .headerbody .navbar{
-    height: 44vh;
+    height: 50vh;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8px !important;
 }
 
-.navbar ul.nav {
-    padding-top: 30px !important;
+.headerbody .navbar ul.nav {
     width: 100%;
     flex-wrap: nowrap;
     height: inherit;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    gap: 63px !important;
+    gap: 53.5px !important;
 }
 
-.navlink{
+.headerbody .navbar ul.nav .navlink{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
 }
 
-.linktext{
-    font-family: 'Cairo';
+.headerbody .navbar .linktext{
+   
     font-style: normal;
-    color:var(--color1);
+    color:var(--main-color2);
     font-weight: 500;
-    font-size: 24px;
+   font-size: var(--font-size-lg);
     line-height: 38px;
-    border-bottom: 4px solid var(--color2);
+    border-bottom: 4px solid var(--border-color1);
+    transition: 0.2s ease-in;
 }
 
-.linktext:hover{
+.headerbody .navbar .linktext:hover{
     font-weight: 700;
     padding: 6px 72px 6px 24px !important;
     border-radius: 50px;
     height: 100%;
-    background-color: var(--background2);
+    background-color: var(--background-color1);
 }
 
-.linkicon {
+.headerbody .navbar .linkicon {
     display: flex;
     align-items: flex-end;
 }
 
-.linkicon .faicon {
-    font-size: 30px ;
-    color: var(--color2);
+.headerbody .navbar .linkicon .faicon {
+    font-size: var(--font-size-xl) ;
+    color: var(--main-color1);
 }
 
-.submenu{
+.headerbody .navbar .submenu{
     display: block;
     width: 310px;
     max-height: 653px;
     /* height: calc(100% - 20px); */
-    background-color: var(--background3);
+    background-color: var(--main-color3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 36px;
     text-transform: capitalize;
@@ -164,35 +180,34 @@ header .profileSection{
     left: 287px;
     z-index: 999;
 }
-.submenu ul{
+.headerbody .navbar .submenu ul{
     height: 291px;
     overflow: scroll;
     overflow-x: hidden !important;
     z-index: 999;
 }
-.submenu ul li{
+.headerbody .navbar .submenu ul li{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    color: var(--background1) !important;
+    color: var(--main-color2) !important;
     margin: 8px 0 !important;
 
 }
-.submenu ul li a{
-    color: var(--background1) !important;
+.headerbody .navbar .submenu ul li a{
+    color: var(--main-color2) !important;
 }
-.submenu ul li a:hover{
+.headerbody .navbar .submenu ul li a:hover{
     font-weight: 700;
-    color: var(--background1) !important;
+    color: var(--main-color2) !important;
 }
 
-.copyright p{
+footer .copyright p{
     text-align: left;
-    font-size: 12px;
+   font-size: var(--font-size-xs);
     /* margin-top: 90px !important; */
 }
-
 
 
 @media screen and (max-width: 1024px) {
@@ -216,7 +231,7 @@ header .profileSection{
         width: 300px;
         height: 100%;
         z-index: 999;
-        left: -300px;
+        left: -345px;
     }
     header::before {
         left: -1px;
@@ -224,7 +239,14 @@ header .profileSection{
     .mainlogo img {
         margin-bottom: 49px !important;
     }
-    header .profileSection {
+    
+    .headerbody {
+        margin-top: -2px !important;
+        justify-content: flex-start;
+        gap: 3vh;
+
+    }
+    .headerbody .profileSection {
         margin-top: -20px !important;
         gap:10px !important;
     }
@@ -234,14 +256,14 @@ header .profileSection{
         align-items: center;
         width: 50px;
         height: 50px;
-        background-color: var(--background3);
+        background-color: var(--main-color3);
         position: absolute;
-        font-size: 25px;
-        border-right: 2px solid var(--background2);
+        font-size: var(--font-size-lg);
+        border-right: 2px solid var(--main-color1);
         border-radius: 0 16px 16px 0;
         position: absolute;
         top: 0;
-        left: 294px;
+        left: 300px;
         cursor: pointer;
     }
     .profileSection .userData {
@@ -257,41 +279,48 @@ header .profileSection{
         flex-direction: column !important;
     }
 
-    .saperator{
+    .profileSection .saperator{
         width: 15px;
         height: 2px;
     }
-    .branchLink {
-        font-family: 'Cairo';
+    .headerbody .branchLink {
         font-style: normal;
-        color: var(--color2);
-        font-size: 24px;
+        font-size: var(--font-size-lg);
         line-height: 20px;
-        margin-top: 0px !important;
+        margin-top: 42px !important;
     }
     .currentScreen{
         flex-direction: column !important;
     }
 
-    .headerbody {
-        margin-top: -2px !important;
-    }
 
     .headerbody .navbar {
-    height: 31vh;
+        height: fit-content;
     }
 
-    .navbar ul.nav {
+    .headerbody .navbar ul.nav {
         height: 248px;
+        padding-top: 30px !important;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
-
+    .copyright{
+        width: 250px;
+    }
     .copyright p {
         /* margin-bottom: 10% !important; */
     }
 
-    .submenu{
+    .headerbody .navbar .submenu{
         top: 295px;
         left: 240px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 
 }
@@ -310,5 +339,5 @@ header .profileSection{
 
 @media screen and (max-width: 320px) {
 
-
+    
 }
