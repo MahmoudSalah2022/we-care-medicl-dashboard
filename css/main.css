@@ -366,12 +366,25 @@ div#availabelDoctorCurosel {
     .allWedgitContent{
         padding: 10px 72px !important;
     }
+
+    #appointmentCalenderButton p {
+        margin-bottom: -6px !important;
+    }
+
+    #todayappointmentButton p {
+        margin-bottom: -6px !important;
+    }
+
+    #appointmentDetailsButton p {
+        margin-bottom: -6px !important;
+    }
+
     .table {
         height: 178px;
         width: 306px;
         border: none !important;
         position: relative;
-        left: 13px;
+        left: 0px;
         overflow-y: scroll;
     }
 }

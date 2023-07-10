@@ -7,6 +7,7 @@ let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
+
 // storing full name of all months in array
 const months = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
@@ -47,8 +48,20 @@ const renderCalendar = () => {
             popupOverlay.classList.add('showOverlay')
         });
     });
+
+    
+    let calenderDays = document.querySelectorAll('li.day')
+    calenderDays.forEach((calenderDay) => {
+        let calenderDayNumber = calenderDay.innerText;
+        calenderDay.addEventListener('click', () => {
+            selectedDate = `${calenderDayNumber}-${months[currMonth]}-${currYear}`
+            console.log(selectedDate)
+        }) 
+
+    });
 }
 renderCalendar();
+
 
 prevNextIcon.forEach(icon => { // getting prev and next icons
     icon.addEventListener("click", () => { // adding click event on both icons
