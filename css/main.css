@@ -266,6 +266,7 @@ div#availabelDoctorCurosel {
     display: flex;
     margin-top: 25px !important;
     flex-direction: column;
+    margin-right: -3px !important;
 }
 
 #appointmentCalenderButton, #todayappointmentButton, #appointmentDetailsButton {
@@ -342,9 +343,16 @@ div#availabelDoctorCurosel {
         margin-left: -1px !important;
     }
 
-    .middalWedgit .wedgitContent {
-        margin-left: -14px !important;
+    .wedgitContent.calender {
+        display: flex;
+        margin-top: 0px !important;
+        flex-direction: column;
+        margin-left: -3px !important;
     }
+
+    /* .middalWedgit .wedgitContent {
+        margin-left: -14px !important;
+    } */
 
     .wedgitContent .doctorName p {
        font-size: var(--font-size-md);
@@ -363,7 +371,7 @@ div#availabelDoctorCurosel {
         width: 306px;
         border: none !important;
         position: relative;
-        left: 21px;
+        left: 13px;
         overflow-y: scroll;
     }
 }
